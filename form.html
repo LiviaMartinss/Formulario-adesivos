@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <script src="form.js"></script>
     <title>Formulário</title>
-</head>
+</head> 
 <body>
     <div class="box">
         <form action="">
@@ -20,11 +24,22 @@
                     <input type="checkbox" name="vue" id="checkbox" class="inputUser" required>
                     <label for="vue">Vue</label><br>
                     <input type="checkbox" name="angular" id="checkbox" class="inputUser" required>
-                    <label for="angular">Angular</label><br>
+                    <label for="angular">Angular</label>
                 </div>
+                <br>
+                <strong>Quantos adesivos de cada?</strong>
                 <div class="inputBox">
-                    <input type="button"
+                  <br>
+                  <input type="button" onclick="abatementValue()" value="-" />
+                  <input type="text" id="number" value="0"/>
+                  <input type="button" onclick="incrementValue()" value="+" />
                 </div>
+                <br>
+                <strong>Observações</strong>
+                <div class="inputBox">
+                  <br>
+                  <input type="text" id="text" value="Alguma dúvida? Recado?" list="4"/>
+                </div> 
             </fieldset>
         </form>
     </div>
