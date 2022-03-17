@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <script src="form.js"></script>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="form.css">
     <title>Formulário</title>
 </head> 
@@ -20,27 +21,29 @@
                 <strong>Quais adesivos:</strong>
                 <div class="inputBox">
                     <br>
-                    <input type="checkbox" name="react" id="checkbox" class="inputUser" required>
+                    <input type="checkbox" name="react" id="checkbox" class="inputUser">
                     <label for="react">React</label><br>
-                    <input type="checkbox" name="vue" id="checkbox" class="inputUser" required>
+                    <input type="checkbox" name="vue" id="checkbox" class="inputUser">
                     <label for="vue">Vue</label><br>
-                    <input type="checkbox" name="angular" id="checkbox" class="inputUser" required>
+                    <input type="checkbox" name="angular" id="checkbox" class="inputUser">
                     <label for="angular">Angular</label>
                 </div>
                 <br>
                 <strong>Quantos adesivos de cada?</strong>
                 <div class="inputBox">
-                  <br>
-                  <input type="button" onclick="abatementValue()" value="-" />
-                  <input type="text" id="number" value="0"/>
-                  <input type="button" onclick="incrementValue()" value="+" />
+                    <br>
+                    <input class="less-btn" type="button" onclick="abatementValue()" value="-" />
+                    <input class="number" type="text" id="number" value="0" required />
+                    <input class="more-btn" type="button" onclick="incrementValue()" value="+" />
                 </div>
                 <br>
                 <strong>Observações</strong>
                 <div class="inputBox">
-                  <br>
-                  <input type="text" id="text" value="Alguma dúvida? Recado?" list="4"/>
+                    <br>
+                    <textarea class="textarea" type="textarea" id="textarea" placeholder="Alguma dúvida? Recado?"></textarea>
                 </div> 
+                <br><br>
+                <button class="custom-btn submit"><span>ENVIAR</span></button>
             </fieldset>
         </form>
     </div>
