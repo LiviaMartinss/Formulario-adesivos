@@ -1,14 +1,6 @@
-function incrementValue()
-{
-    var value = parseInt(document.getElementById('number').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value++;
-    document.getElementById('number').value = value;
-}
-function abatementValue()
-{
-    var value = parseInt(document.getElementById('number').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value--;
-    document.getElementById('number').value = value;
+window.onload = function () {
+    document.getElementById("fa-solid").addEventListener("click", function (e) {
+        e.preventDefault();
+        window.location.href = window.location.pathname.split("/").shift().toString().concat("form.html");
+    })
 }
