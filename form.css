@@ -94,6 +94,13 @@ button{
     margin-left: 360px;
 }
 
+h6{
+    margin-left: 363px;
+    margin-bottom: 0;
+    color: red;
+    display: none;
+}
+
 .custom-btn {
     width: 130px;
     height: 40px;
