@@ -10,7 +10,6 @@ window.onload = function () {
         }
     })
 }
-
 function incrementValue()
 {
     var value = parseInt(document.getElementById('number').value, 10);
