@@ -4,33 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="pay.js"></script>
-    <link rel="stylesheet" href="pay.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="form.css">
-    <title>Formulário</title>
-</head> 
+    <link rel="stylesheet" href="pay.css">
+    <title>Pagamento</title>
+</head>
 <body>
     <div class="box">
         <form action="">
             <fieldset>
                 <div class="checkout-header">
-                <i id="fa-solid" class="fa-solid fa-angle-left"></i>
+                    <i id="fa-solid" class="fa-solid fa-angle-left"></i>
+                    <p class="checkout-title">
+                        <i class="fa-solid fa-credit-card"></i> Detalhes de pagamento
+                    </p>
+                </div>
+                <div class="inputBox">
+                <p>
+                    <input type="number" class="checkout-input checkout-card"  placeholder="4111 1111 1111 1111" required>
+                    <input type="number" class="checkout-input checkout-cvc" placeholder="CVC" required>
+                </p>
+                <br>
+                </div>
+                <div class="checkout-header">
                 <p class="checkout-title">
                 <i class="fa-solid fa-truck-moving"></i> Detalhes de entrega
                 </p>
-              </div>
+                </div>
                 <div class="inputBox">
                     <p>
-                      <input type="text" class="checkout-input checkout-name" placeholder="Nome completo" autofocus required>
-                      <input type="text" class="checkout-input checkout-cep" placeholder="Cep" required>
-                      <input type="text" class="checkout-input" placeholder="Cidade" required>
-                      <select class="checkout-select" name="select" required>
-                        <option value="selecione"selected>Selecione o estado</option>
+                        <input type="text" class="checkout-input checkout-name" placeholder="Nome completo" autofocus required>
+                        <input type="text" class="checkout-input checkout-cep" placeholder="Cep" required>
+                        <input type="text" class="checkout-input" placeholder="Cidade" required>
+                        <select class="checkout-select" name="select" required>
+                        <option value="selecione"selected>Selecione o estado</option required>
                         <option value="AC">AC</option>
                         <option value="AL">AL</option>
                         <option value="AP">AP</option>
@@ -55,22 +64,11 @@
                         <option value="SC">SC</option>
                         <option value="SE">SE</option>
                         <option value="TO">TO</option>
-                      </select>
-                      <input type="text" class="checkout checkout-exp" placeholder="Rua, número" required>
+                        </select>
+                    <input type="text" class="checkout checkout-exp" placeholder="Rua, número" required>
                     </p>
                     <br>
-                  </div>
-                    <p class="checkout-title2">
-                    <i class="fa-solid fa-credit-card"></i> Detalhes de pagamento
-                    </p>
-                    <div class="inputBox">
-                    <p>
-                      <input type="text" class="checkout-input checkout-card" placeholder="4111 1111 1111 1111" required>
-                      <input type="text" class="checkout-input checkout-cvc" placeholder="CVC" required>
-                    </p>
-                    <br>
-                    </div>
-                <a href="file:///C:/Users/Drogaria/Desktop/formul%C3%A1rio/pay.html"><button class="custom-btn submit"><span>ENVIAR</span></button></a>
+                    <button class="custom-btn submit" id="goToPay"><span>ENVIAR</span></button></a>
             </fieldset>
         </form>
     </div>
