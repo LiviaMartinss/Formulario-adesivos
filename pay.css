@@ -1,6 +1,3 @@
-.fa-solid{
-    color: #8C91B2;
-}
 
 p{
     margin: 0;
@@ -14,6 +11,11 @@ fieldset{
     align-items: center;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 .checkout-input{
     padding:10px;
     margin-right: 10px;
@@ -23,6 +25,7 @@ fieldset{
     background-color: #DDE3E9;
     box-shadow:0 0 25px 10px rgba(0,0,0,0.03);
 }
+
 
 .checkout-name{
     padding:10px;
@@ -70,5 +73,17 @@ fieldset{
 }
 
 .checkout-title2{
+    margin-right: 20px;
+}
+
+.checkout-card{
+    width: 300px;
+}
+
+.checkout-cvc{
+    width: 30px;
+}
+
+.checkout-title{
     margin-right: 20px;
 }
