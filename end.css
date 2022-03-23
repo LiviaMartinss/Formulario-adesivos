@@ -1,0 +1,14 @@
+.fa-truck-fast{
+    color: #8C91B2;
+    font-size: 200px;
+}
+p{
+    font-weight: 300;
+    font-family: roboto;
+    font-size: 45px;
+}
+.checkout-header{
+    width: 480px;
+    margin-bottom: 40px;
+    text-align: center;
+}
